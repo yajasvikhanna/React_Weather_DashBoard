@@ -1,4 +1,5 @@
 # Weather Dashboard
+![Weather Dashboard Demo](weather_dashboard.gif)
 
 A modern, responsive React.js weather dashboard that provides real-time weather information and forecasts for any city worldwide.
 
