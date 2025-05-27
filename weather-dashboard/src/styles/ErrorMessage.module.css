@@ -1,0 +1,86 @@
+.errorContainer {
+    margin-bottom: 20px;
+    animation: slideIn 0.3s ease-out;
+  }
+  
+  .errorContent {
+    background: rgba(231, 76, 60, 0.9);
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+  }
+  
+  .errorIcon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+  }
+  
+  .errorText {
+    flex: 1;
+  }
+  
+  .errorTitle {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 5px;
+  }
+  
+  .errorMessage {
+    font-size: 0.95rem;
+    color: rgba(255, 255, 255, 0.9);
+    line-height: 1.4;
+  }
+  
+  .closeButton {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+  
+  .closeButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.1);
+  }
+  
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .errorContent {
+      padding: 15px;
+      gap: 10px;
+    }
+    
+    .errorTitle {
+      font-size: 1rem;
+    }
+    
+    .errorMessage {
+      font-size: 0.9rem;
+    }
+  }

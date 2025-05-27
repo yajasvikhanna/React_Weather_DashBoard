@@ -1,0 +1,121 @@
+.forecastContainer {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forecastTitle {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .forecastGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+  }
+  
+  .forecastCard {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 20px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .forecastCard:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .forecastDate {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .forecastIcon {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto 10px;
+    display: block;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+  }
+  
+  .forecastTemps {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  
+  .tempHigh {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: white;
+  }
+  
+  .tempLow {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.7);
+  }
+  
+  .forecastCondition {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: white;
+    margin-bottom: 10px;
+  }
+  
+  .forecastDetails {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+  }
+  
+  .forecastDetail {
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .loadingMessage {
+    text-align: center;
+    padding: 40px;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .forecastContainer {
+      padding: 20px;
+    }
+    
+    .forecastGrid {
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    
+    .forecastCard {
+      padding: 15px;
+    }
+    
+    .forecastIcon {
+      width: 40px;
+      height: 40px;
+    }
+    
+    .tempHigh,
+    .tempLow {
+      font-size: 1rem;
+    }
+  }
